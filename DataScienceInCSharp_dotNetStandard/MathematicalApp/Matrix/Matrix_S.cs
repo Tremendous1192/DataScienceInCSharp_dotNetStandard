@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataScienceInCSharp_dotNetStandard
+namespace Tremendous1192.SelfEmployed.DataScienceInCSharp_dotNetStandard.MathematicalApp.DataScienceInCSharp_dotNetStandard
 {
-    public partial class Matrix
+    public static partial class Matrix
     {
 
         /// <summary>

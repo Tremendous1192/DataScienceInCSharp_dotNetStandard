@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-using Tremendous1192.SelfEmployed.DataScienceInCSharp_dotNetStandard.MathematicalApp.DataScienceInCSharp_dotNetStandard;
+using Tremendous1192.SelfEmployed.DataScienceInCSharp_dotNetStandard.MathematicalApp;
 
-
-namespace Test.Tremendous1192.SelfEmployed.DataScienceInCSharp_dotNetStandard.MathematicalApp.DataScienceInCSharp_dotNetStandard
+namespace Test.Tremendous1192.SelfEmployed.DataScienceInCSharp_dotNetStandard.MathematicalApp
 {
     public partial class TestMatrix
     {

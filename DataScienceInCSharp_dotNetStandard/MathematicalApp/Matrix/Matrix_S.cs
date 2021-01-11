@@ -135,7 +135,7 @@ namespace Tremendous1192.SelfEmployed.DataScienceInCSharp_dotNetStandard.Mathema
         /// </summary>
         /// <param name="matrix"></param>
         /// <returns></returns>
-        public static double Sums(double[,] matrix)
+        public static double Sum(double[,] matrix)
         {
             double result = 0.0;
             foreach (double m in matrix) { result += m; }

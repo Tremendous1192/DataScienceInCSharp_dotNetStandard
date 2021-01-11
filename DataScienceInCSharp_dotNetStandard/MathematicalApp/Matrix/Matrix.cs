@@ -10,5 +10,10 @@ namespace Tremendous1192.SelfEmployed.DataScienceInCSharp_dotNetStandard.Mathema
     /// </summary>
     public static partial class Matrix
     {
+
+
+
+
+
     }
 }

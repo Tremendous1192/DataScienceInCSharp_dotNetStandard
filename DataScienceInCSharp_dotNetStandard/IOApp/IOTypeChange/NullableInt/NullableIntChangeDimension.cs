@@ -33,6 +33,7 @@ namespace Tremendous1192.SelfEmployed.DataScienceInCSharp_dotNetStandard.IOApp
 
 
 
+        
         /// <summary>
         /// Chnage int?[,,] to int?[]
         /// </summary>
@@ -89,7 +90,7 @@ namespace Tremendous1192.SelfEmployed.DataScienceInCSharp_dotNetStandard.IOApp
             }
             return result;
         }
-
+        
 
 
         /// <summary>
@@ -120,7 +121,7 @@ namespace Tremendous1192.SelfEmployed.DataScienceInCSharp_dotNetStandard.IOApp
         }
 
 
-
+        
         /// <summary>
         /// Chnage int?[] to int?[,,]
         /// </summary>
@@ -182,7 +183,7 @@ namespace Tremendous1192.SelfEmployed.DataScienceInCSharp_dotNetStandard.IOApp
 
             return result;
         }
-
+        
 
 
 

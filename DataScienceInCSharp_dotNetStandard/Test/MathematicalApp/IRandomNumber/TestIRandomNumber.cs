@@ -16,7 +16,7 @@ namespace Test.Tremendous1192.SelfEmployed.DataScienceInCSharp_dotNetStandard.Ma
             Console.WriteLine("乱数のテストを行います。起動しているプログラムと同じディレクトリに結果のテキストファイルを作成します。");
 
 
-            int number = 1000;
+            int number = 5000;
 
             UniformDistributionIRandomNumber uDIRM = new UniformDistributionIRandomNumber(1);
             string[] resultUDIRM = new string[number];

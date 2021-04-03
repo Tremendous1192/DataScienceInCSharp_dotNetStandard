@@ -37,16 +37,27 @@ namespace Tremendous1192.SelfEmployed.DataScienceInCSharp_dotNetStandard.Mathema
             {
                 //要素[ i , i ] の成分が 1 になるように、　i 行目の値を除算する
                 var this_low = sweeped[i, i];
-                for (int j = i; j < sweeped.GetLength(1); j++)
+                //要素[ i , i ] の成分が 1 の場合,除算を省略できる。
+                if (sweeped[i, i] != 1)
                 {
-                    sweeped[i, j] /= this_low;
+                    for (int j = i; j < sweeped.GetLength(1); j++)
+                    {
+                        sweeped[i, j] /= this_low;
+                    }
                 }
+
+
 
                 // i2 行目の成分に関して、i列目の値が 0になるように、各列の値を減算する
                 for (int i2 = 0; i2 < sweeped.GetLength(0); i2++)
                 {
-                    if (i == i2) { }
-                    else
+                    //要素[ i2 , i ] の成分が 1 の場合,i2行目の減算は省略できる.
+                    if (sweeped[i2, i] == 0)
+                    {
+                        continue;
+                    }
+
+                    if (i != i2)
                     {
                         double this_subtracter = sweeped[i2, i];
                         for (int j = i; j < sweeped.GetLength(1); j++)
@@ -57,7 +68,7 @@ namespace Tremendous1192.SelfEmployed.DataScienceInCSharp_dotNetStandard.Mathema
                 }
             }
 
-            //戻り値は、matrix.GetLength(1)列目以降の行列
+            //戻り値は、matrix.GetLength(1)列目以降の正方行列
             double[,] result = new double[matrix.GetLength(0), matrix.GetLength(1)];
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
@@ -72,4 +83,6 @@ namespace Tremendous1192.SelfEmployed.DataScienceInCSharp_dotNetStandard.Mathema
 
 
     }
+
+
 }
